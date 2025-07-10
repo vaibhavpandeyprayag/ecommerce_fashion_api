@@ -19,8 +19,10 @@
   "homepage": "https://github.com/vaibhavpandeyprayag/ecommerce_fashion_api#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
     "dotenv": "^17.0.0",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "nodemon": "^3.1.10",
     "pg": "^8.16.3"
   }
