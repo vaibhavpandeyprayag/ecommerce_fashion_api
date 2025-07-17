@@ -1,7 +1,7 @@
 const cryptojs = require("crypto-js");
 const jwt = require("jsonwebtoken");
 
-const encrpyt = data => {
+const encrypt = data => {
   return cryptojs.AES.encrypt(data, process.env.SECRET_KEY).toString();
 };
 
@@ -15,4 +15,4 @@ const signJwt = payload => {
   return jwt.sign(payload, process.env.SECRET_KEY);
 };
 
-module.exports = { encrpyt, decrypt, signJwt };
+module.exports = { encrypt, decrypt, signJwt };
